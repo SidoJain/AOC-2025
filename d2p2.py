@@ -1,5 +1,3 @@
-import math
-
 def parse_ranges(ranges_str: str) -> list[tuple[int, int]]:
     ranges = []
     for range in ranges_str.split(','):
@@ -9,7 +7,7 @@ def parse_ranges(ranges_str: str) -> list[tuple[int, int]]:
 
 def get_divisors(n: int) -> list[int]:
     divs = [1]
-    for i in range(2, int(math.sqrt(n)) + 1):
+    for i in range(2, int(n ** 0.5) + 1):
         if n % i == 0:
             divs.append(i)
             if i * i != n:
