@@ -4,7 +4,6 @@ Edge = tuple[int, int, int]
 def parse_input(raw_data: str) -> list[Coord]:
     points = []
     lines = raw_data.strip().split('\n')
-
     for line in lines:
         parts = line.split(',')
         points.append((int(parts[0]), int(parts[1]), int(parts[2])))

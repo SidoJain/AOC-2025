@@ -22,7 +22,6 @@ def get_all_edges(points: list[Coord]) -> list[Edge]:
         for j in range(i + 1, n):
             d = dist_sq(points[i], points[j])
             edges.append((d, i, j))
-            
     return edges
 
 def make_set(n: int) -> list[int]:
@@ -36,7 +35,6 @@ def find(parent: list[int], i: int) -> int:
 def union(parent: list[int], i: int, j: int) -> None:
     root_i = find(parent, i)
     root_j = find(parent, j)
-
     if root_i != root_j:
         parent[root_i] = root_j
 
@@ -61,7 +59,6 @@ def solve_circuit(input_str: str, limit: int) -> int:
 
     sizes = list(size_map.values())
     sizes.sort(reverse=True)
-
     result = 1
     for size in sizes[:3]:
         result *= size
