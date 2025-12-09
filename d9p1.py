@@ -20,4 +20,4 @@ def find_largest_rectangle(input_data: str) -> int:
 
 with open("../inputs/input9.txt", "r") as file:
     data = file.read()
-print(find_largest_rectangle(data) == 4786902990)
+print(find_largest_rectangle(data))

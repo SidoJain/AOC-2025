@@ -61,4 +61,4 @@ def find_largest_polygon(data: str) -> int:
 
 with open("../inputs/input9.txt", "r") as file:
     data = file.read()
-print(find_largest_polygon(data) == 1571016172)
+print(find_largest_polygon(data))
